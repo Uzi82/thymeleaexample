@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.defaultproject</groupId>
-	<artifactId>defaultproject</artifactId>
+	<groupId>com.thymeleafexample</groupId>
+	<artifactId>thymeleafexample</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>defaultproject</name>
+	<name>thymeleafexample</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -58,7 +58,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>defaultproject</finalName>
+		<finalName>thymeleafexample</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
 			<plugins>
 				<plugin>

@@ -7,11 +7,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
+
 @Controller
 @RequestMapping
 public class HomeController {
 	@GetMapping
-	public String hello() {
+	public String index() {
+		return "/home";
+	}
+	@GetMapping("/hello")
+	public String getMethodName(@RequestParam("name") String name,
+								@RequestParam("surname") String surname,
+								Model model) {
+		model.addAttribute("name", name + " " + surname);
 		return "/hello";
 	}
 }
